@@ -1,0 +1,39 @@
+
+.three-dots:hover
+{
+  color: #89b6d4;
+}
+
+.three-dots{
+  position: relative;
+ 
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  left: -120px;
+   text-align: left;
+  background-color: rgb(241, 238, 220);
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: rgb(70, 3, 3);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+ 
+}
+.dropdown-content
+{
+  padding-right: 100px;
+}
+
+
+.three-dots a:hover {background-color: #ddd;}
+
+.show {display: block;}

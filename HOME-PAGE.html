@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home-page</title>
+    <link rel="Stylesheet" href="HP.css">
+    <link rel="Stylesheet" href="flexbox_top.css">
+    <link rel="Stylesheet" href="search-bar.css">
+    <link rel="Stylesheet" href="menu.css">
+    <link rel="Stylesheet" href="dropdow-Three-dash.css">
+    <link rel="Stylesheet" href="welcom.css">
+    <link rel="Stylesheet" href="sidebar.css">
+
+
+  </head>
+  <body>
+    <div class="container-navigation">
+      <div class="toll-bar" > 
+        <div class="toll-name"><b>PARITA</b></div>
+        <div class="Search-bar" >
+          <form class="bar">
+            <input type="search" placeholder="Find Spots,Communities..">
+            <button type="submit">Search</button>
+          </form>
+        </div>
+        <div class="menu">
+            <div class="three-dots" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+                
+                  <div id="myDropdown" class="dropdown-content">
+                    
+                    <a href="#home">Community</a>
+                    <a href="#about">Posts</a>
+                    <a href="#contact">My Visited List</a>
+                    <a href="#vlist">Planning to Visit</a>
+                    <a href="#clist">Currently Visiting</a>
+                  </div>
+                
+            </div>
+        </div>   
+            <script>
+              /* When the user clicks on the button, 
+              toggle between hiding and showing the dropdown content */
+              function myFunction(x) {
+              x.classList.toggle("change");
+              document.getElementById('myDropdown').style.display = document.getElementById('myDropdown').style.display =='block' ?   'none' : 'block';
+              } 
+              
+              // Close the dropdown if the user clicks outside of it
+              window.onclick = function(event) {
+                if (!event.target.matches('.dropbtn')) {
+                  var dropdowns = document.getElementsByClassName("dropdown-content");
+                  var i;
+                  for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                      openDropdown.classList.remove('show');
+                    }
+                  }
+                }
+              }
+              </script>
+              
+        </div>
+      </div>
+    
+    <div class="welcome-to-india">
+      <h1>Welcome to India</h1>
+    </div>
+    <div class="sidebar">
+      <ul>
+          <li><a href="#" ><img class="community" src="images/community.png" alt="Image 1"></a></li>
+          <li><a href="#"><img src="images/Currently-Visiting.png" alt="Image 2"></a></li>
+          <li><a href="#"><img src="images/Planning-to-visit.png" alt="Image 3"></a></li>
+          <li><a href="#" ><img src="images/snap.png" alt="Image 4"></a></li>
+          <li><a href="#"><img src="images/visited-list.png" alt="Image 5"></a></li>
+          
+          </ul>
+  </div>
+  </body>
+</html>
